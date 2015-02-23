@@ -18,6 +18,20 @@
 	}
 ```
 
+## 示例
+
+在 `example` 目录中有一个简单的示例。你需要将 `oddqc.class.php` 复制到该目录下才能使用。
+
+`ol.class.php` 展示了对 SDK 的简单的拓展。
+`test.php` 展示了如何用拓展后的 SDK 来操作青云实例。
+
+示例功能场景：
+
+1. 你已经有一台绑定了公网 ip 的青云机器。
+2. 这台机器可能是 Minecraft 服务器，或者一些什么计算服务器。
+3. 你不需要 24h 开机，但是你希望它能够方便的开启关闭。
+4. 那么，`ol.class.php` 则告诉你如何停止这台机器、删除绑定的 ip ，或者重新获取一个 ip 并开启这台机器。
+
 ## 错误处理
 
 oddqc 采用异常的方式来处理错误。
@@ -61,3 +75,4 @@ oddqc 采用异常的方式来处理错误。
 
 1. 在 curl 的 [CA Extract](http://curl.haxx.se/docs/caextract.html) 页面，下载最新的 CA bundle。
 2. 修改你的 php.ini ，将 `curl.cainfo` 指向你刚刚下载的 CA bundle，如：`curl.cainfo=c:\php\cacert.pem`
+
