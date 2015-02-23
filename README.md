@@ -55,7 +55,7 @@ oddqc 采用异常的方式来处理错误。
 
 这是由于你的 PHP 中的 cURL 内置的 CA 信任列表不够完整导致的。
 
-** 请一定不要设置 `CURLOPT_SSL_VERIFYPEER` 选项，除非你十分清楚你在干什么！ **
+**请一定不要设置 `CURLOPT_SSL_VERIFYPEER` 选项，除非你十分清楚你在干什么！**
 
 正确的修正方法如下（这个方法来自 [php 手册下的一条用户评论](http://php.net/manual/en/function.curl-setopt.php#110457)）：
 
